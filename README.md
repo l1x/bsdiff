@@ -4,9 +4,9 @@
      bsdiff -- generate a patch between two binary files
 
 # SYNOPSIS
-  
+```
    bsdiff oldfile newfile patchfile
-
+```
 # DESCRIPTION
   
 	   The bsdiff utility compares oldfile to newfile and writes to patchfile a
