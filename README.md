@@ -1,12 +1,15 @@
 
-NAME
+# NAME 
+
      bsdiff -- generate a patch between two binary files
 
-SYNOPSIS
-     bsdiff oldfile newfile patchfile
+# SYNOPSIS
+  
+   bsdiff oldfile newfile patchfile
 
-DESCRIPTION
-     The bsdiff utility compares oldfile to newfile and writes to patchfile a
+# DESCRIPTION
+  
+	   The bsdiff utility compares oldfile to newfile and writes to patchfile a
      binary patch suitable for use by bspatch(1).  When oldfile and newfile
      are two versions of an executable program, the patches produced are on
      average a factor of five smaller than those produced by any other binary
@@ -16,13 +19,16 @@ DESCRIPTION
      requires an absolute minimum working set size of 8 times the size of
      oldfile.
 
-SEE ALSO
+# SEE ALSO 
+
      bspatch(1)
 
-AUTHORS
+# AUTHORS
+
      Colin Percival <cperciva@FreeBSD.org>
 
-BUGS
+# BUGS
+
      The bsdiff utility does not store the hashes of oldfile or newfile in
      patchfile.  As a result, it is possible to apply a patch to the wrong
      file; this will usually produce garbage.  It is recommended that users of
